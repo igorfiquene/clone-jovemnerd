@@ -1,0 +1,45 @@
+/*
+|--------------------------------------------------------------------------
+| VARIABLES
+|--------------------------------------------------------------------------
+*/
+
+// Media Queries
+$to-smb: "only screen and (max-width: 320px)";
+$to-mb: "only screen and (max-width: 767px)";
+$from-lmb: "only screen and (min-width: 540px)";
+$from-ptb: "only screen and (min-width: 767px)";
+$from-ltb: "only screen and (min-width: 1023px)";
+$to-desk: "only screen and (min-width: 1200px)";
+
+// Width, Heights
+$site-width: 1140px;
+
+$primary-color: #1e1e26;
+$second-color: #14141C;
+$text-color: #b4b4b4;
+$text-color2: #3BB4B4;
+
+$bg-color2: #282830;
+
+// Colors
+$color1: $primary-color;
+$color2: $second-color;
+$color3: $text-color;
+$color4: $text-color2;
+$color5: $bg-color2;
+$color6: white;
+$color7: #747474;
+$color-bg: #FFF;
+$color-footer-bg: #F0F0F0;
+$color-link: #333;
+$color-link-hover: #333;
+$color-post-title: #333;
+$color-post-link: #333;
+$color-post-link-hover: #333;
+$color-post-border: #333;
+$color-post-elements: #333;
+
+// Fonts
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-size: 100%;

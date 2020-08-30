@@ -1,0 +1,126 @@
+/*
+	|--------------------------------------------------------------------------
+	| HEADER STYLES
+	|--------------------------------------------------------------------------
+*/
+
+.header {
+	position: fixed;
+	height: auto;
+	width: 100%;
+	top: 0;
+	z-index: 3;
+}
+
+.header-mb {
+	background-color: $primary-color;
+	padding: 12px;
+	.header_btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.toggle-menu {
+		color: $color6;
+		left: 12px;
+		span {
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			> i { font-size: 10px; }
+		}
+	}
+	.search-mb {
+		right: 12px;
+		svg {
+			fill: $color6;
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.logo-mb {
+		margin: 0 auto;
+		display: block;
+		width: 80px;
+		svg {
+			width: 80px;
+			height: 48px;
+		}
+	}
+}
+
+/*
+	|----------------
+	| HEADER LIST MB
+	|----------------
+*/
+
+// Padrão Drop Down
+
+.list {
+	position: absolute;
+	top: 72px;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: $color2;
+	transform: translateX(-999px);
+	opacity: 0;
+	transition: all .5s ease ;
+	// background-color: red;
+	> li {
+		padding: 20px 12px;
+		font-weight: 700;
+		border-bottom: 1px solid $color1;
+		a { color: $color6; }
+		a > i { font-size: 10px; }
+	}
+	.more a {
+		display: flex;
+		align-items: center;
+		justify-content: space-arround;
+	}
+}
+.list.active {
+	opacity: 1;
+	transform: translateX(0);
+	overflow-y: auto;
+	
+}
+.header-mb {
+	.list.active { 
+		z-index: 99;
+	}
+}
+
+
+
+/* TO SMALL MOBILE <=320px */
+@media #{$to-smb} {
+
+}
+
+/* TO MOBILE <=767px */
+@media #{$to-mb} {
+
+}
+
+/* FROM MOBILE L >=540px */
+@media #{$from-lmb} {
+
+}
+
+/* FROM TABLET P >=768px */
+@media #{$from-ptb} {
+	
+}
+
+/* FROM TABLET L >=1024px */
+@media #{$from-ltb} {
+	
+}
+
+/* TO DESK >=1200px */
+@media #{$to-desk} {
+	
+}

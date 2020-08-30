@@ -1,0 +1,115 @@
+/*
+|--------------------------------------------------------------------------
+| SUB HEADER STYLES
+|--------------------------------------------------------------------------
+*/
+
+.sub-header {
+	background-color: $color2;
+	padding: 8px 12px;
+	transition: all .3s ease;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 78px;
+	z-index: 2;
+	.bunker {
+		display: flex;
+		align-items: center;
+		.bunker-switcher {
+			display: flex;
+			align-items: center;
+			svg { width: 120px; height: 32px; margin-right: 10px;}
+			i { color: $color4; font-size: 10px; margin-right: 10px; padding-top: 10px;}
+		}
+
+		.bunker-nav {
+			display: flex;
+			justify-content: space-between;
+			overflow-x: scroll;
+			-webkit-overflow-scrolling: touch;
+			&::-webkit-scrollbar { display: none; }
+			li {
+				white-space: nowrap;
+				margin-right: 16px;
+			}
+			> li a {
+				color: $color4;
+				font-weight: 700;
+			}
+		}
+	}
+
+	// DropDown
+
+	.bunker-menu.list {
+		position: relative;
+		display: none;
+	}
+	.bunker-menu.list.active {
+		display: block;
+		position: absolute;
+		top: 48px;
+		height: 100%;
+		background: $color1;
+		height: auto !important;
+		width: auto !important;
+		> li {
+			border-bottom: 1px solid $color5;
+			position: relative;
+			padding: 30px 20px;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 8px;
+				width: 6px;
+				height: 22px;
+				background-color: $color3;
+				border-radius: 25px;
+			}
+			&:nth-last-of-type(2n):before {
+				background: $color4 !important;
+			}
+		}
+	}
+}
+
+.sub-header.subiu {
+	top: 0 !important;
+	opacity: 0;
+	visibility: hidden;
+	// display: none;
+}
+
+
+
+
+/* TO SMALL MOBILE <=320px */
+@media #{$to-smb} {
+
+}
+
+/* TO MOBILE <=767px */
+@media #{$to-mb} {
+
+}
+
+/* FROM MOBILE L >=540px */
+@media #{$from-lmb} {
+
+}
+
+/* FROM TABLET P >=768px */
+@media #{$from-ptb} {
+	
+}
+
+/* FROM TABLET L >=1024px */
+@media #{$from-ltb} {
+	
+}
+
+/* TO DESK >=1200px */
+@media #{$to-desk} {
+	
+}

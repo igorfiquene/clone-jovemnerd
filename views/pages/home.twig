@@ -1,0 +1,43 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+	
+
+	{% for post in posts %}
+
+		<div class="manchete container">
+			<div class="post-manchete">
+				<a href="{{ post.link }}">
+					<div class="img-content">
+						<img src="{{ post.thumbnail }}" alt="">
+					</div>
+		
+					<div class="text-area">
+						<span class="chamada"> {{ post.meta('chamada') }} </span>
+						<h3 class="title"> {{ post.title }} </h3>
+						<a class="share">
+							Compartilhar
+							<svg>
+								<use xlink:href="{{ theme.img }}/sprites.svg#share"></use>
+							</svg>
+						</a>
+				
+					</div>
+				</a>
+			</div>
+		
+		</div>
+
+	{# <ul>
+		
+		<p>
+			<strong>Post:</strong>
+			<a href="{{ post.link }}">{{ post.title }}</a>
+			<p>{{andre}}</p>
+		</p>
+		 #}
+	</ul>
+
+	{% endfor %}
+
+{% endblock %}

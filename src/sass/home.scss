@@ -1,0 +1,52 @@
+/*
+|--------------------------------------------------------------------------
+| ONYX FRAMEWORK - HOME STYLES
+|--------------------------------------------------------------------------
+*/
+
+// Library
+	@import "_libs/vars";
+	@import "_libs/mixins";
+	@import "_libs/extends";
+
+// vendors
+	// @import "tiny-slider/dist/tiny-slider";
+
+/*
+|--------------------------------------------------------------------------
+| COMPONENTS
+|--------------------------------------------------------------------------
+*/
+	
+// @import 'components/home-slide';
+
+
+.post-manchete {
+	.text-area {
+		margin: 10px 0;
+		.chamada {
+			color: $color4;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		.title {
+			// letter-spacing: -1.2px;
+			margin: 10px 0;
+			font-size: 24px !important;
+			line-height: 30px;
+		}
+
+		.share {
+			color: $color7;
+			font-weight: 700;
+			display: flex;
+			align-items: center;
+			> svg {
+				margin-left: 10px;
+				width: 15px;
+				height: 15px;
+				fill: $color7;
+			}
+		}
+	}
+}

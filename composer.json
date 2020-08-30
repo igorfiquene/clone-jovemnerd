@@ -1,0 +1,30 @@
+{
+	"name": "andremacola/onyx-theme",
+	"description": "Onyx WP Theme",
+	"homepage": "https://github.com/andremacola/onyx-theme",
+	"type": "wordpress-theme",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Andre Macola",
+			"email": "andremacola@gmail.com"
+		}
+	],
+	"scripts": {
+		"onyx:dump": [
+			"composer dump-autoload -o"
+		]
+	},
+	"config": {
+		"vendor-dir": "core/vendor"
+	},
+	"autoload": {
+		"psr-4": {
+			"Onyx\\" : "core/app/Onyx",
+			"Onyx\\Controllers\\" : ["core/app/Controllers", "core/app/Api"]
+		}
+	},
+	"require": {
+		"timber/timber": "^1.18.0"
+	}
+}
